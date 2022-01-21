@@ -7,33 +7,53 @@
 
 :root {
     scroll-behavior: smooth;
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 16px;
 }
+
+
+
+/* tipografia */
+article h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+
 
 /* links */
 .links {
     position: fixed;
-    right: 16px;
-    top: 8px;
+    right: 1rem;
+    top: 2rem;
     z-index: 2;
+    font-size: 0;
 }
 
 .links a {
-    height: 64px;
-    width: 64px;
-    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    background-color: #fff;
     transition: 0.4s;
     display: inline-block;
     border-radius: 100%;
-    margin-right: 16px;
+    margin-right: 1.2rem;
     text-decoration: none;
     text-align: center;
     position: relative;
+    font-size: 1.2rem;
+    color: #333;
 }
 
 .links a:hover {
     background-color: #eee;
-    box-shadow: 0 0 16px #666;
+    box-shadow: 0 0 1rem #333;
     text-decoration: none;
+    color: #000;
+}
+
+.links a:active {
+    background-color: #999;
 }
 
 .links a:last-child {
@@ -41,28 +61,17 @@
 }
 
 
+
 /* contenuto */
-.common {
+article {
     height: 100vh;
     position: relative;
 }
 
 .box {
-    width: 30%;
+    width: 65%;
     text-align: center;
     text-transform: uppercase;
-}
-
-#red {
-    background-color: rgba(221, 53, 53);
-}
-
-#green {
-    background-color: rgb(53, 221, 103);
-}
-
-#yellow {
-    background-color: rgb(221, 190, 53);
 }
 
 .center {
@@ -70,4 +79,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#red {
+    background-color: rgba(221, 53, 53);
+    color: rgb(221, 190, 53);
+}
+
+#green {
+    background-color: rgb(27 129 42);
+    color: rgb(221, 190, 53);
+}
+
+#yellow {
+    background-color: rgb(221, 190, 53);
+    color: rgb(27 129 42);
+}
+
+article img {
+    width: 100%;
 }
