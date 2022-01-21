@@ -1,8 +1,9 @@
 /* CSS reset */
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,8 +13,8 @@
 }
 
 
-
 /* navigazione e links */
+
 nav {
     position: fixed;
     right: 1rem;
@@ -49,12 +50,13 @@ nav a:last-child {
     margin-right: 0;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
     display: inline-block;
 }
 
-#red a{
+#red a {
     color: rgb(221, 190, 53);
     transition: 0.4s;
 }
@@ -83,14 +85,14 @@ a, a:hover {
 }
 
 
-
 /* contenuto */
+
 article {
     height: 100vh;
     position: relative;
 }
 
-.box {
+article > a {
     width: 50%;
     text-align: center;
     text-transform: uppercase;
