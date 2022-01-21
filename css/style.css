@@ -1,0 +1,73 @@
+/* CSS reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+/* links */
+.links {
+    position: fixed;
+    right: 16px;
+    top: 8px;
+    z-index: 2;
+}
+
+.links a {
+    height: 64px;
+    width: 64px;
+    background-color: white;
+    transition: 0.4s;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 16px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+.links a:hover {
+    background-color: #eee;
+    box-shadow: 0 0 16px #666;
+    text-decoration: none;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+
+/* contenuto */
+.common {
+    height: 100vh;
+    position: relative;
+}
+
+.box {
+    width: 30%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#red {
+    background-color: rgba(221, 53, 53);
+}
+
+#green {
+    background-color: rgb(53, 221, 103);
+}
+
+#yellow {
+    background-color: rgb(221, 190, 53);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
