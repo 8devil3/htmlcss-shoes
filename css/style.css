@@ -13,16 +13,8 @@
 
 
 
-/* tipografia */
-article h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-
-
-/* links */
-.links {
+/* navigazione e links */
+nav {
     position: fixed;
     right: 1rem;
     top: 2rem;
@@ -30,34 +22,64 @@ article h2 {
     font-size: 0;
 }
 
-.links a {
+nav a {
     height: 3rem;
     width: 3rem;
     background-color: #fff;
     transition: 0.4s;
-    display: inline-block;
     border-radius: 100%;
     margin-right: 1.2rem;
-    text-decoration: none;
     text-align: center;
     position: relative;
     font-size: 1.2rem;
     color: #333;
 }
 
-.links a:hover {
+nav a:hover {
     background-color: #eee;
     box-shadow: 0 0 1rem #333;
-    text-decoration: none;
     color: #000;
 }
 
-.links a:active {
+nav a:active {
     background-color: #999;
 }
 
-.links a:last-child {
+nav a:last-child {
     margin-right: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+#red a{
+    color: rgb(221, 190, 53);
+    transition: 0.4s;
+}
+
+#red a:hover {
+    color: rgb(175, 150, 38);
+}
+
+#green a {
+    color: rgb(221, 190, 53);
+    transition: 0.4s;
+}
+
+#green a:hover {
+    color: rgb(175, 150, 38);
+}
+
+#yellow a {
+    color: rgb(27 129 42);
+    transition: 0.4s;
+}
+
+#yellow a:hover {
+    color: rgb(21, 97, 32);
+    transition: 0.4s;
 }
 
 
@@ -66,12 +88,14 @@ article h2 {
 article {
     height: 100vh;
     position: relative;
+
 }
 
 .box {
-    width: 65%;
+    width: 50%;
     text-align: center;
     text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
 .center {
@@ -83,19 +107,17 @@ article {
 
 #red {
     background-color: rgba(221, 53, 53);
-    color: rgb(221, 190, 53);
 }
 
 #green {
     background-color: rgb(27 129 42);
-    color: rgb(221, 190, 53);
 }
 
 #yellow {
     background-color: rgb(221, 190, 53);
-    color: rgb(27 129 42);
 }
 
 article img {
     width: 100%;
+    margin-bottom: 1rem;
 }
